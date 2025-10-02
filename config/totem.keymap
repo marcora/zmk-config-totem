@@ -153,10 +153,10 @@
 
         ctrl_layer {
             bindings = <
-          &trans        &trans        &trans      &trans      &trans    &trans  &trans  &trans  &trans  &trans
-          &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &trans    &trans  &trans  &trans  &trans  &trans
-&kp CAPS  &trans        &trans        &trans      &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans      &trans      &trans    &trans  &trans  &trans
+          &trans       &trans        &trans      &trans           &trans    &trans  &trans  &trans  &trans  &trans
+          &voldn_mute  &kp C_VOL_UP  &kp C_PREV  &next_playpause  &trans    &trans  &trans  &trans  &trans  &trans
+&kp CAPS  &trans       &trans        &trans      &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans      &trans           &trans    &trans  &trans  &trans
             >;
 
             label = "CTRL";
