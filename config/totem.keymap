@@ -30,6 +30,52 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        assign: assign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp LT &kp MINUS &kp SPACE>;
+            label = "ASSIGN";
+        };
+
+        pipe: pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp PIPE &kp GT &kp SPACE>;
+            label = "PIPE";
+        };
+    };
+
+    behaviors {
+        lt_assign: lt_assign {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LT_ASSIGN";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN>, <&assign>;
+        };
+
+        gt_pipe: gt_pipe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GT_PIPE";
+            #binding-cells = <0>;
+            bindings = <&kp GREATER_THAN>, <&pipe>;
+        };
+
+        voldn_mute: voldn_mute {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOLDN_MUTE";
+            #binding-cells = <0>;
+            bindings = <&kp K_VOL_DN>, <&kp K_MUTE>;
+        };
+
+        next_playpause: next_playpause {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEXT_PLAYPAUSE";
+            #binding-cells = <0>;
+            bindings = <&kp C_NEXT>, <&kp C_PLAY_PAUSE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,7 +107,7 @@
 
         vim_layer {
             bindings = <
-        &kp LG(Q)  &kp LG(W)  &kp LC(UP)  &kp LC(DOWN)  &kp F13          &kp CARET       &kp LBKT        &kp RBKT       &trans           &trans
+        &kp LG(Q)  &kp LG(W)  &kp LC(UP)  &kp LC(DOWN)  &kp F13          &kp CARET       &kp LBKT        &kp RBKT       &lt_assign       &gt_pipe
         &kp LSHFT  &kp LCTRL  &kp LALT    &kp LGUI      &trans           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp END
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)     &kp LG(LS(Z))    &kp HOME        &kp RBRC        &kp LBRC       &kp HASH         &kp STAR  &kp PRCNT
                               &trans      &trans        &trans           &kp COLON       &kp RG(SPACE)   &kp RA(SPACE)
