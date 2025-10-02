@@ -64,7 +64,7 @@
         nav_layer_1 {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAVI";
+            label = "NAV1";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -91,7 +91,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         nav_layer_2 {
-            label = "NAVI";
+            label = "NAV2";
             bindings = <
          &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0
          &mt LSHFT EXCL  &mt LCTRL AT  &mt LALT HASH     &mt LGUI DLLR      &kp PRCNT       &kp CARET     &mt RGUI AMPS  &mt RMETA STAR  &mt RCTRL LPAR  &mt RSHFT RPAR
