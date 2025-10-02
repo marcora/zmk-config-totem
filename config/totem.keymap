@@ -52,14 +52,23 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q       &kp W       &kp F        &kp P            &kp G      &kp J    &kp L        &kp U        &kp Y       &kp SEMI
-           &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T      &kp D      &kp H    &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
-&kp GRAVE  &kp Z       &kp X       &kp C        &kp V            &kp B      &kp K    &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp SQT
-                                   &kp ESC      &lt 1 BACKSPACE  &kp TAB    &kp RET  &lt 1 SPACE  &kp DEL
+           &kp Q       &kp W       &kp F        &kp P            &kp G        &kp J        &kp L        &kp U         &kp Y       &kp SEMI
+           &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T      &kp D        &kp H        &mt RSHFT N  &mt RCTRL E   &mt RALT I  &mt RGUI O
+&kp GRAVE  &kp Z       &kp X       &kp C        &kp V            &kp B        &kp K        &kp M        &kp COMMA     &kp DOT     &kp FSLH    &kp SQT
+                                   &kp ESC      &lt 1 BACKSPACE  &lt 2 TAB    &lt 2 ENTER  &lt 3 SPACE  &lt 4 DELETE
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        vim_layer {
+            bindings = <
+        &kp LG(Q)  &kp LG(W)  &kp LC(UP)  &kp LC(DOWN)  &kp F13          &kp CARET       &kp LBKT        &kp RBKT       &trans           &trans
+        &kp LSHFT  &kp LCTRL  &kp LALT    &kp LGUI      &trans           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp END
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)     &kp LG(LS(Z))    &kp HOME        &kp RBRC        &kp LBRC       &kp HASH         &kp STAR  &kp PRCNT
+                              &trans      &trans        &trans           &kp COLON       &kp RG(SPACE)   &kp RA(SPACE)
+            >;
+
+            label = "VIM";
+        };
 
         num_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -83,22 +92,6 @@
 &kp F12  &kp F1          &kp F2        &kp F3            &kp F4             &kp F5          &kp F6                &kp F7         &kp F8          &kp F9          &kp F10         &kp F11
                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH       &kp NON_US_BACKSLASH  &kp MINUS      &kp EQUAL
             >;
-        };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        vim_layer {
-            bindings = <
-        &kp LG(Q)  &kp LG(W)  &kp LC(UP)  &kp LC(DOWN)  &kp F13          &kp CARET       &kp LBKT        &kp RBKT       &trans           &trans
-        &kp LSHFT  &kp LCTRL  &kp LALT    &kp LGUI      &trans           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp END
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)     &kp LG(LS(Z))    &kp HOME        &kp RBRC        &kp LBRC       &kp HASH         &kp STAR  &kp PRCNT
-                              &trans      &trans        &trans           &kp COLON       &kp RG(SPACE)   &kp RA(SPACE)
-            >;
-
-            label = "VIM";
         };
 
         hot_layer {
