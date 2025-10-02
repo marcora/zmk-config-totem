@@ -113,13 +113,24 @@
 
         hotkeys_layer {
             bindings = <
+                           &kp LG(LC(LA(LS(Q))))  &kp LG(LC(LA(LS(W))))  &kp LG(LC(LA(LS(E))))  &kp LG(LC(LA(LS(R))))  &kp LG(LC(LA(LS(T))))    &kp LG(LC(LA(LS(Y))))  &kp LG(LC(LA(LS(U))))  &kp LG(LC(LA(LS(I))))      &kp LG(LC(LA(LS(O))))    &kp LG(LC(LA(LS(P))))
+                           &kp LG(LC(LA(LS(A))))  &kp LG(LC(LA(LS(S))))  &kp LG(LC(LA(LS(D))))  &kp LG(LC(LA(LS(F))))  &kp LG(LC(LA(LS(G))))    &kp LG(LC(LA(LS(H))))  &kp LG(LC(LA(LS(J))))  &kp LG(LC(LA(LS(K))))      &kp LG(LC(LA(LS(L))))    &kp LG(LC(LA(LS(SEMI))))
+&kp LG(LC(LA(LS(GRAVE))))  &kp LG(LC(LA(LS(Z))))  &kp LG(LC(LA(LS(X))))  &kp LG(LC(LA(LS(C))))  &kp LG(LC(LA(LS(V))))  &kp LG(LC(LA(LS(B))))    &kp LG(LC(LA(LS(N))))  &kp LG(LC(LA(LS(M))))  &kp LG(LC(LA(LS(COMMA))))  &kp LG(LC(LA(LS(DOT))))  &kp LG(LC(LA(LS(FSLH))))  &kp LG(LC(LA(LS(APOS))))
+                                                                         &trans                 &kp F18                &trans                   &trans                 &trans                 &trans
+            >;
+
+            label = "HOT";
+        };
+
+        control_layer {
+            bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "HOT";
+            label = "CTRL";
         };
     };
 };
