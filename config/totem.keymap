@@ -102,10 +102,10 @@
 
         layer_3 {
             bindings = <
-        &trans     &trans     &trans    &trans    &trans    &trans          &trans          &trans        &trans           &trans
-        &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END
-&trans  &trans     &trans     &trans    &trans    &trans    &kp HOME        &trans          &trans        &trans           &trans   &trans
-                              &trans    &trans    &trans    &trans          &trans          &trans
+        &kp LG(Q)  &kp LG(W)  &kp LC(UP)  &kp LC(DOWN)  &kp F13          &kp CARET       &kp LBKT        &kp RBKT       &trans           &trans
+        &kp LSHFT  &kp LCTRL  &kp LALT    &kp LGUI      &trans           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp END
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)     &kp LG(LS(Z))    &kp HOME        &kp RBRC        &kp LBRC       &kp HASH         &kp STAR  &kp PRCNT
+                              &trans      &trans        &trans           &kp COLON       &kp RG(SPACE)   &kp RA(SPACE)
             >;
         };
     };
