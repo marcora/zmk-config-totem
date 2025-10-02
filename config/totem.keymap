@@ -55,16 +55,16 @@
            &kp Q       &kp W       &kp F        &kp P            &kp G      &kp J    &kp L        &kp U        &kp Y       &kp SEMI
            &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T      &kp D      &kp H    &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
 &kp GRAVE  &kp Z       &kp X       &kp C        &kp V            &kp B      &kp K    &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp SQT
-                                   &kp ESC      &lt 1 BACKSPACE  &kp TAB    &kp RET  &lt 2 SPACE  &kp DEL
+                                   &kp ESC      &lt 1 BACKSPACE  &kp TAB    &kp RET  &lt 1 SPACE  &kp DEL
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        nav_layer_1 {
+        num_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAV1";
+            label = "NUM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -89,16 +89,6 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        nav_layer_2 {
-            label = "NAV2";
-            bindings = <
-         &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0
-         &mt LSHFT EXCL  &mt LCTRL AT  &mt LALT HASH     &mt LGUI DLLR      &kp PRCNT       &kp CARET     &mt RGUI AMPS  &mt RMETA STAR  &mt RCTRL LPAR  &mt RSHFT RPAR
-&kp F12  &kp F1          &kp F2        &kp F3            &kp F4             &kp F5          &kp F6        &kp F7         &kp F8          &kp F9          &kp F10         &kp F11
-                                       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH       &trans        &trans         &trans
-            >;
-        };
 
         vim_layer {
             bindings = <
