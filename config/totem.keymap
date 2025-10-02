@@ -78,10 +78,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6          &kp NUMBER_7   &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0
-         &mt LSHFT EXCL  &mt LCTRL AT  &mt LALT HASH  &mt LGUI DLLR  &kp PRCNT       &kp CARET             &mt RGUI AMPS  &mt RMETA STAR  &mt RCTRL LPAR  &mt RSHFT RPAR
-&kp F12  &kp F1          &kp F2        &kp F3         &kp F4         &kp F5          &kp F6                &kp F7         &kp F8          &kp F9          &kp F10         &kp F11
-                                       &trans         &trans         &trans          &kp NON_US_BACKSLASH  &kp MINUS      &kp EQUAL
+         &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5    &kp NUMBER_6          &kp NUMBER_7   &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0
+         &mt LSHFT EXCL  &mt LCTRL AT  &mt LALT HASH     &mt LGUI DLLR      &kp PRCNT       &kp CARET             &mt RGUI AMPS  &mt RMETA STAR  &mt RCTRL LPAR  &mt RSHFT RPAR
+&kp F12  &kp F1          &kp F2        &kp F3            &kp F4             &kp F5          &kp F6                &kp F7         &kp F8          &kp F9          &kp F10         &kp F11
+                                       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH       &kp NON_US_BACKSLASH  &kp MINUS      &kp EQUAL
             >;
         };
 
@@ -101,7 +101,7 @@
             label = "VIM";
         };
 
-        hotkeys_layer {
+        hot_layer {
             bindings = <
                            &kp LG(LC(LA(LS(Q))))  &kp LG(LC(LA(LS(W))))  &kp LG(LC(LA(LS(E))))  &kp LG(LC(LA(LS(R))))  &kp LG(LC(LA(LS(T))))    &kp LG(LC(LA(LS(Y))))  &kp LG(LC(LA(LS(U))))  &kp LG(LC(LA(LS(I))))      &kp LG(LC(LA(LS(O))))    &kp LG(LC(LA(LS(P))))
                            &kp LG(LC(LA(LS(A))))  &kp LG(LC(LA(LS(S))))  &kp LG(LC(LA(LS(D))))  &kp LG(LC(LA(LS(F))))  &kp LG(LC(LA(LS(G))))    &kp LG(LC(LA(LS(H))))  &kp LG(LC(LA(LS(J))))  &kp LG(LC(LA(LS(K))))      &kp LG(LC(LA(LS(L))))    &kp LG(LC(LA(LS(SEMI))))
@@ -112,7 +112,7 @@
             label = "HOT";
         };
 
-        control_layer {
+        ctrl_layer {
             bindings = <
           &trans        &trans        &trans      &trans      &trans    &trans  &trans  &trans  &trans  &trans
           &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &trans    &trans  &trans  &trans  &trans  &trans
